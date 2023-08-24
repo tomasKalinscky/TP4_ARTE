@@ -206,9 +206,11 @@ font-size: 100px;
   position: relative;
   width: 25%;
   height: 20px;
-  border: 1px solid #07d374;
+  border: 1px solid #000000;
   overflow: hidden;
   margin-right: 20px;
+  border-radius: 10px;
+  background-color: #0cdf64;
 }
 
 .bar {
