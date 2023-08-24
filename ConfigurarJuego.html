@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar bg-body-tertiary" style="padding: 0px; height: 10%; width: 100%;">
+        <div class="container-fluid" style="background-color:#04b6b3">
+            <a class="navbar-brand" href='index.html' style="background-color:#04b6b3; text-align: left; justify-content: left;">
+                <img src="LogoLayOut.png" alt="Logo" width="7%" height="7%" class="d-inline-block align-text-center">
+                Preguntadort
+            </a>
+        </div>
+    </nav>
+<form action='Juego.html' method="post" style="text-align: center">
+    <h1 style="margin-top: 2%;">Elige la Dificultad</h1>
+    <div class="configuracion">
+        <input type="hidden" name="dificultad" id="dificultad">
+        <input type="hidden" name="categoria" id="categoria">
+        <button id="D-1" type="button" class="btn btn-primary active btnCate" data-bs-toggle="button">Mezclado</button>
+        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button">Facil</button>
+        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button">Medio</button>
+        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button">Dificil</button>
+        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button">Extremo</button>
+    </div>
+    <h1 style="margin-top: 3%;">Elige la Categoria</h1>
+    <div class="configuracion">
+        <button id="C-1" type="button" class="btn btn-primary active btnCate" data-bs-toggle="button">Mezclado</button>
+        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button">Arte</button>
+        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button">Deporte</button>
+        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button">Ciencia</button>
+        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button">Entretenimiento</button>
+        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button">Geografia</button>
+        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button">Historia</button>
+    </div>
+    <div style="text-align:center; display: flex;">
+    <div class="form-group" style="border-radius: 20px; width:20%">
+            <input type="text" name="username" id="username" placeholder="Ingresa tu nombre de usuario" required>
+        </div>
+    </div>
+    <div class="index-menu" style="margin-top:5%;">
+        <button type="submit" class="button-85" style="width: 20%;">
+            <b style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;">Jugar</b>
+        </button>
+    </div>
+</form>
+</body>
+</html>
