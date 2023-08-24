@@ -22,26 +22,26 @@
             </a>
         </div>
     </nav>
-<form action='Juego.html' method="post" style="text-align: center">
-    <h1 style="margin-top: 2%;">Elige la Dificultad</h1>
+<form action='Juego.html' method="post" style="text-align: center; justify-content: center; align-items: center; text-align: center;">
+    <h1 style="margin-top: 1%;">Elige la Dificultad</h1>
     <div class="configuracion">
         <input type="hidden" name="dificultad" id="dificultad">
         <input type="hidden" name="categoria" id="categoria">
-        <button id="D-1" type="button" class="btn btn-primary active btnCate" data-bs-toggle="button">Mezclado</button>
-        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:green;">Facil</button>
-        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:orange;">Medio</button>
-        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:red;">Dificil</button>
-        <button type="button" id="D+@item.IDDificultad" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:black;">Extremo</button>
+        <button id="D-1" type="button" class="btn btn-primary active btnCate" data-bs-toggle="button" onclick="updateDificultad('D-1')">Mezclado</button>
+        <button type="button" id="D1" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:green;" onclick="updateDificultad('D1')">Facil</button>
+        <button type="button" id="D2" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:orange;" onclick="updateDificultad('D2')">Medio</button>
+        <button type="button" id="D3" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:red;" onclick="updateDificultad('D3')">Dificil</button>
+        <button type="button" id="D4" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:black;" onclick="updateDificultad('D4')">Extremo</button>
     </div>
     <h1 style="margin-top: 3%;">Elige la Categoria</h1>
     <div class="configuracion">
-        <button id="C-1" type="button" class="btn btn-primary active btnCate" data-bs-toggle="button">Mezclado</button>
-        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:#b12225;">Arte</button>
-        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:#fc9224;">Deporte</button>
-        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:#20c96f;">Ciencia</button>
-        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:#e44ca0;">Entretenimiento</button>
-        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:#1479d3;">Geografia</button>
-        <button type="button" id="C+@item.IDCategoria" class="btn btn-primary btnCate" data-bs-toggle="button"style="background-color:#eecf37;">Historia</button>
+        <button id="C-1" type="button" class="btn btn-primary active btnCate" data-bs-toggle="button" onclick="updateCategoria('C-1')">Mezclado</button>
+        <button type="button" id="C1" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:#b12225;" onclick="updateCategoria('C1')">Arte</button>
+        <button type="button" id="C2" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:#fc9224;" onclick="updateCategoria('C2')">Deporte</button>
+        <button type="button" id="C3" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:#20c96f;" onclick="updateCategoria('C3')">Ciencia</button>
+        <button type="button" id="C4" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:#e44ca0;" onclick="updateCategoria('C4')">Entretenimiento</button>
+        <button type="button" id="C5" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:#1479d3;" onclick="updateCategoria('C5')">Geografia</button>
+        <button type="button" id="C6" class="btn btn-primary btnCate" data-bs-toggle="button" style="background-color:#eecf37;" onclick="updateCategoria('C6')">Historia</button>
     </div>
     <div style="text-align:center; display: flex;">
     <div class="form-group" style="border-radius: 20px; width:20%">
@@ -49,10 +49,54 @@
         </div>
     </div>
     <div class="index-menu" style="margin-top:5%;">
-        <button type="submit" class="button-85" style="width: 20%;">
+        <button type="submit" class="button-85" style="width: 15%;">
             <b style="font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: larger;">Jugar</b>
         </button>
     </div>
 </form>
+<script>
+    function updateDificultad(id){
+        document.getElementById(id).className = "btn btn-primary btnCate active";
+        if (id !== "D-1"){
+            document.getElementById("D-1").className = "btn btn-primary btnCate";
+        }
+        if (id !== "D1"){
+            document.getElementById("D1").className = "btn btn-primary btnCate";
+        }
+        if (id !== "D2"){
+            document.getElementById("D2").className = "btn btn-primary btnCate";
+        }
+        if (id !== "D3"){
+            document.getElementById("D3").className = "btn btn-primary btnCate";
+        }
+        if (id !== "D4"){
+            document.getElementById("D4").className = "btn btn-primary btnCate";
+        }
+    }
+    function updateCategoria(id){
+        document.getElementById(id).className = "btn btn-primary btnCate active";
+        if (id !== "C-1"){
+            document.getElementById("C-1").className = "btn btn-primary btnCate";
+        }
+        if (id !== "C1"){
+            document.getElementById("C1").className = "btn btn-primary btnCate";
+        }
+        if (id !== "C2"){
+            document.getElementById("C2").className = "btn btn-primary btnCate";
+        }
+        if (id !== "C3"){
+            document.getElementById("C3").className = "btn btn-primary btnCate";
+        }
+        if (id !== "C4"){
+            document.getElementById("C4").className = "btn btn-primary btnCate";
+        }
+        if (id !== "C5"){
+            document.getElementById("C5").className = "btn btn-primary btnCate";
+        }
+        if (id !== "C6"){
+            document.getElementById("C6").className = "btn btn-primary btnCate";
+        }
+    }
+</script>
 </body>
 </html>
