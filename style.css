@@ -201,6 +201,9 @@ font-size: 100px;
 .button-85:after {
   background: #16a7a4;
 }
+.button-85:after { 
+  background:#13918e
+}
 .button-84:after { 
   background:#13918e
 }
@@ -230,9 +233,6 @@ font-size: 100px;
 .button-85 text{
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: xx-large;
-}
-.nueva-linea {
-  display:flex;
 }
 .body {
   justify-content: center;
