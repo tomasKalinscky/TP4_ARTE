@@ -343,5 +343,10 @@ a.navbar-brand {
     background-color: #2980b9;
   }
   
+  #correct{
+    background-color: #0cdf64;
+  }
   
-  
+  #incorrect{
+    background-color: rgb(241, 2, 2);
+  }
