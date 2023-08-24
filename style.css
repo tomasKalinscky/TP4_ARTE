@@ -305,7 +305,7 @@ a.navbar-brand {
   .btn-primary {
     color: #fff;
     background-color: #1b6ec2;
-    border-color: #1861ac;
+    border: 3px solid black;
   }
   
   .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
@@ -356,9 +356,9 @@ a.navbar-brand {
   }
   
   .button-form button {
-    background-color: #3498db;
+    background-color:#2be9d9;
     border: none;
-    color: white;
+    color: black;
     padding: 40px 80px;
     border-radius: 15px;
     margin: 6px; 
@@ -372,7 +372,7 @@ a.navbar-brand {
   }
   
   .button-form button:hover {
-    background-color: #2980b9;
+    background-color: #2acec0;
   }
   
   .circle {
