@@ -83,9 +83,9 @@ div{
   background-color: black !important; 
 }
 .horizontal-line {
-  width: 180px; /* Establecer el ancho basado en el contenido */
-  border-top: 2px solid black; /* Línea horizontal en la parte superior */
-  margin: 10px auto; /* Centrar horizontalmente con márgenes automáticos */
+  width: 180px; 
+  border-top: 2px solid black; 
+  margin: 10px auto; 
   margin-top: 22px;
 }
 
