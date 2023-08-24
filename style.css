@@ -230,8 +230,8 @@ font-size: 100px;
 
 .bar-container {
   position: relative;
-  width: 25%;
-  height: 20px;
+  width: 50%;
+  height: 22px;
   border: 1px solid #000000;
   overflow: hidden;
   margin-right: 20px;
@@ -343,5 +343,35 @@ a.navbar-brand {
     background-color: #2980b9;
   }
   
+  .circle {
+    width: 100px;
+    height: 100px;
+    background: radial-gradient(#0ff56f,  #06e7e4);
+    border-radius: 50%;
+    position: absolute;
+    animation: move-up6 3s ease-in infinite alternate-reverse;
+  }
   
+  .circle:nth-child(1) {
+    top: -25px;
+    left: -25px;
+  }
+  
+  .circle:nth-child(2) {
+    bottom: -25px;
+    right: -25px;
+    animation-name: move-down1;
+  }
+  
+  @keyframes move-up6 {
+    to {
+      transform: translateY(-30px);
+    }
+  }
+  
+  @keyframes move-down1 {
+    to {
+      transform: translateY(30px);
+    }
+  }
   
