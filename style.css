@@ -77,16 +77,43 @@ div{
 }
 
 .vertical-line {
-  border: 2px solid black;
-  color: black;
+  border-left: 2px solid black; 
   height: 30px;
   margin: 0 10px;
+  background-color: black !important; 
+}
+.horizontal-line {
+  width: 180px; /* Establecer el ancho basado en el contenido */
+  border-top: 2px solid black; /* Línea horizontal en la parte superior */
+  margin: 10px auto; /* Centrar horizontalmente con márgenes automáticos */
+  margin-top: 22px;
+}
+
+hr {
+  opacity: 1 !important;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.center-box {
+  background-color: #04b6b3;
+  width: 55%;
+  border-radius: 15px;
+  padding: 3%;
 }
 
 .center-text {
   text-align: center;
   justify-content: center;
 }
+
+
+
 
 
 .Header-Layout{
@@ -375,3 +402,10 @@ a.navbar-brand {
     }
   }
   
+  #correct{
+    background-color: #0cdf64;
+  }
+  
+  #incorrect{
+    background-color: rgb(241, 2, 2);
+  }
